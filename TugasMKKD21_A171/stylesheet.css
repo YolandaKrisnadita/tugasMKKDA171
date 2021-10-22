@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&family=Yatra+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+/* Dibawah ini script Header by Berliana*/
+.topnav{
+    background-color:#ffffff ;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    list-style: none;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+header{
+    margin:0;
+    padding:0;
+    background-color: #222222;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ghost{
+    width: 140px;
+    height: 160px;
+    background-color: #f2f2f2;
+    border-radius: 60px 60px 0 0;
+    position: relative;
+    cursor: pointer;
+}
+.face{
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 50%);
+}
+.eyes  {
+    height: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 14px;
+}
+ .eyes span{
+     width: 24px;
+     height: 24px;
+     background-color:#222222;
+     border-radius: 50%;
+     transition: .3s linear;
+ }
+ .ghost:hover .eyes span{
+     height: 16px;
+ }
+
+ .mouth{
+     width: 40px;
+     height: 20px;
+     background-color: #222222;
+     margin: auto;
+     border-radius: 0 0 20px 20px;
+     transition: .3s linear;
+ }
+
+ .ghost:hover .mouth{
+     height: 12px;
+ }
+
+ .hands{
+     width: 180px;
+     position: absolute;
+     left: -20px;
+     top: 80px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .hands span{
+     width: 20px;
+     height:30px;
+     background-color: #f2f2f2;
+ }
+ .hands span:first-child{
+     border-radius: 20px 0 0 20px;
+ }
+ .hand span:last-child{
+     border-radius: 0 20px 20px 0;
+ }
+ .feet{
+     position: absolute;
+     width: 100%;
+     bottom: -20px;
+     display: flex;
+}
+.feet span{
+    flex:1;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 0 0 20px 20px;
+}
+
+.feet span:first-child{
+    border-radius: 0 0 20px 12px;
+}
+.feet span:last-child{
+    border-radius: 0 0 12px 20px;
+}
+
+/* Dibawah ini script Our Project by Putri*/
+ .container{
+     max-width: 1200px;
+     margin-top: 10px;
+     margin-left: 30px;
+     padding:0 40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ /*.image, .accordion-menu{
+     width: calc(50% - 20%);
+ }*/
+.image{
+
+    width: 50%;
+}
+ .accordion-menu{
+     width:50%;
+
+ }
+ .title{
+     background-color:#044343 ;
+     display: flex;
+     color: #ffffff;
+     padding:20px;
+     cursor: pointer;
+     text-transform: uppercase;
+     font-size: 14px;
+     font-weight: 600;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .icon{
+     position: relative;
+     width: 14px;
+ }
+
+ .icon::before, .icon::after{
+     content: "";
+     position: absolute;
+     width: 14px;
+     height: 3px;
+     background-color: #fff;
+     top: -1.5px;
+ }
+
+ .icon::after{
+     transform:rotate(90deg);
+     transition: .5s linear;
+ }
+
+ .text{
+     background-color: #ffffff60;
+     color: #000000;
+     line-height: 26px;
+     margin:6px 0;
+     opacity:0 ;
+     height: 0;
+ }
+
+ .item:target .text{
+     height: auto;
+     opacity: 1;
+     padding: 20px;
+     margin:12px 0;
+ }
+
+ .item:target .icon::after{
+     transform: rotate(0);
+ }
+ @media screen and (max-width:960px) {
+     .container{
+         max-width:600px;
+     }
+     .image, .accordion-menu{
+         width: 100%;
+         margin:20px 0;
+
+     }
+     
+ }
+
+/*Dibawah ini Script About Us by Zahra*/
+.mainbody {
+    background: url(aboutus.png) no-repeat left;
+    background-size: 55%;
+    background-color: #044343;
+    overflow: hidden;
+    padding:100px 0;
+}
+
+.body1 {
+	width: 55%;
+    float: right;
+    background-color: #ffff;
+    padding:150px;
+}
+
+
+.body1 h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.textbo1 {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:1200px){
+    .body1{
+        padding:80px;
+    }   
+}
+@media screen and (max-width:1000px){
+    .mainbody{
+        background-size:100%;
+        padding: 100px 40px;
+    }
+    .body1{
+        width:100%;
+    }   
+ 
+}
+@media screen and (max-width:600px){
+    .mainbody{
+        padding:0,;
+    }
+    .body1{
+        padding:60px;
+    }   
+}
+/*Dibawah ini Script OurTeam by Yoland*/    
+
+body{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background:#ffff;  
+    background-size: cover; 
+}
+.wrapper{
+    margin-top:60px;
+    text-align: center;
+    margin-bottom:60px;
+}
+.wrapper h1{
+    font-family: 'Yatra One', cursive;
+    font-size: 48px;
+    color:#000;
+    margin-bottom: 25px;
+    font-weight:bold;
+}
+.wrapper .our_team{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wrapper .our_team .team_member{
+    width: 250px;
+    margin: 5px;
+    background:#044343;
+    padding: 20px 10px;
+}
+.wrapper .our_team .team_member .member_img{
+    max-width: 190px;
+    width: 100%;
+    height: 190px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding:5px;
+    cursor: pointer;
+    position: relative;
+}
+.wrapper .our_team .team_member .member_img img{
+    width: 100%;
+    height: 100%;
+
+}
+.wrapper .our_team .team_member h3{
+    text-transform:uppercase;
+    font-size: 18px;
+    font-family: 'Yatra One', cursive;
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin: 15px 0 0;
+    color:#ffff;
+}
+.wrapper .our_team .team_member span{
+    font: 10px;
+    color:#E4E4E4;
+}
+.wrapper .our_team .team_member p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: whitesmoke;
+}
+.wrapper .our_team .team_member .social_media{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 95%;
+    height: 95%;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.5% ease;
+}
+.wrapper .our_team .team_member .social_media .item{
+    margin: 0,10px;
+}
+.wrapper .our_team .team_member .social_media .item .fab{
+    color: seashell;
+    font-size: 20px;
+}
+.wrapper .our_team .team_member .member_img:hover .social_media{
+    transform: scale(1);
+}
+
+/* Dibawah ini Script Footer  By Zahra*/
+.footer { 
+    position:fixed;
+    bottom: 0px;
+    width: 100%; 
+    
+}
+.main-content{
+    padding-top: 20px;
+    display: flex; 
+    background:#cacaca;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding:10px 20px;
+}
+.box h2{
+    font-size:1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+.box .content:before{
+    position:absolute;
+    content:'';
+    top:-10px ;
+    height: 2px;
+    width: 100%;
+    background: #ff8a04;
+}
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #044343;
+    top:-10px ;
+
+}
+.box .content p{
+    text-align: justify;
+
+}
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 2px;
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background:#1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius:5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: crimson; 
+}
+
+.center .content .fas{
+    font-size: 1.4375rem;
+    background: #044343;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;  
+    transition: 0.3s;
+    cursor: pointer;
+}
+.center .content .fas:hover{
+    background: crimson; 
+}
+.center .content .tlp{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center.content.email{
+    margin: 10px 0;
+}
+.right .form .text{
+    font-size:1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.right .form .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size:1.0625rem;
+    background: #045757;
+    padding-left: 10px;
+    border: 1px solid #044343;
+}
+.right form input:focus,
+.right form textarea:focus{
+    outline-color:#045757;
+}
+.right form input{
+    height: 35px;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    border:none;
+    outline:none;
+    background:#ff8a04;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor:pointer;
+    transition:.3s;
+}
+.right form .btn button:hover{
+    background: #ffff;
+}
+.bottom center{
+    padding:5px;
+    font-size:0.9375rem;
+    background: #151515;
+}
+.bottom center span{
+    color: #ffff;
+}
